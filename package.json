@@ -12,8 +12,8 @@
   ],
   "scripts": {
     "postinstall": "yarn husky install",
-    "lint": "yarn lint:library",
-    "lint:editor": "yarn workspace handsome-editor/editor lint"
+    "lint": "yarn lint:editor",
+    "lint:editor": "yarn workspace handsome-editor lint"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
