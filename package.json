@@ -1,0 +1,29 @@
+{
+  "name": "editor",
+  "version": "1.0.0",
+  "description": "the rich text editor",
+  "main": "index.js",
+  "repository": "git@github.com:liqiyuanzi/handsome-editor.git",
+  "author": "李起源(10068941) <liqy-e@glodon.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "yarn husky install",
+    "lint": "yarn lint:library",
+    "lint:editor": "yarn workspace handsome-editor/editor lint"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@types/jest": "^28.1.1",
+    "husky": "^8.0.1",
+    "jest": "^28.1.1",
+    "jest-extended": "^2.0.0",
+    "supports-color": "^9.2.2",
+    "ts-jest": "^28.0.5",
+    "typescript": "4.1.3"
+  }
+}
